@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Letras Acessível</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Index.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Livros</a></li>
+            <li><a href="{{ url_for('about') }}">Sobre Nós</a></li>
+            <li><a href="{{ url_for('contact') }}">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="center">
+            <img src="{{ url_for('static', filename='img/Libras.jpeg') }}" alt="Libras">
+        </div>
+        <h1>Mundo das Letras Acessível</h1>
+        <h2>Livros</h2>
+    </header>
+    <main>
+        <section>
+            <h3>O Mágico de Oz</h3>
+            <p>
+                <footer>
+                    <a href="https://open.spotify.com/embed/show/40L2sfWVhmdDBTB5jYrENA?utm_source=generator">
+                        <img src="{{ url_for('static', filename='img/magico de oz.webp') }}" alt="">
+                    </a>
+                </footer>
+                Munchkins, Quadlings e pessoas de porcelana são alguns dos moradores desse lugar incrível...
+            </p>
+        </section>
+
+        <section>
+            <h3>O Pequeno Príncipe</h3>
+            <p>
+                <footer>
+                    <a href="https://open.spotify.com/embed/episode/5Pk6JujpJxb6it5a8zW50C">
+                        <img src="{{ url_for('static', filename='img/pequeno P.jpg') }}" alt="">
+                    </a>
+                </footer>
+                Um piloto cai com seu avião no deserto e ali encontra uma criança loura e frágil...
+            </p>
+        </section>
+
+        <section>
+            <h3>Chapeuzinho Vermelho</h3>
+            <p>
+                <footer>
+                    <a href="https://open.spotify.com/embed/episode/37ut8MDzlOwhOoL0ssAxBh?utm_source=generator&t=5256">
+                        <img src="{{ url_for('static', filename='img/chapeuzinho.jpg') }}" alt="">
+                    </a>
+                </footer>
+                Em um vilarejo, morava uma linda menina chamada Chapeuzinho Vermelho...
+            </p>
+        </section>
+    </main>
+</body>
+</html>
